@@ -1,0 +1,23 @@
+body{
+background-image: url("background.jpg");
+
+
+}
+
+.button-home{
+    width: 200px;
+    padding: 15px 0px;
+    text-align: center;
+    margin: 1rem 53rem;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #960032;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-style: oblique;
+    text-shadow: 2px 2px #000000;
+ }
+ 

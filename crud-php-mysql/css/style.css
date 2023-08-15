@@ -1,0 +1,175 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+body {
+  width: 100%;
+	height: 100vh;
+	color: #fff;
+	background: linear-gradient(-45deg,#ff00d4, #00ffff, #ff0000);
+	position: relative;
+	background-size: 400% 400%;
+	animation: change 10s ease-in-out infinite;
+	background-repeat: repeat-y;
+	
+	
+	 }
+	
+	 
+	 @keyframes change {
+		 0%{
+	
+		   background-position: 0 50%;
+	
+	 }
+		 
+		 50%{
+	
+		   background-position: 100% 50%;
+	 }
+		 100%{
+	
+		   background-position: 0% 50%;
+	
+		 }
+	 }    
+
+   header{
+    z-index: 999;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+    margin-bottom: 5rem;
+}
+
+header .brand{
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s ease;
+
+}
+
+header .brand:hover{
+    transform: scale(1.5);
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+header .navigation{
+    position: relative;
+}
+
+header .navigation .navigation-items a{
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+header .navigation .navigation-items a::before{
+    content: '';
+    height: 4px;
+    width: 0;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    transition: 0.5s;
+ }
+
+ header .navigation .navigation-items a:hover:before{
+    width: 100%;
+ }
+
+ header .navigation .navigation-items a.active{
+    text-decoration: none;
+    padding: 6px 15px;
+    border-radius: 20px;
+    background: #fff;
+    color: #000;
+    transition: 0.3s ease;
+ }
+
+  #formid {
+    padding: 2rem 3rem;
+    background: rgb(121, 121, 121);
+    border-radius: 2rem;
+    margin-bottom: 4rem;
+
+  }
+
+  #formid .form-control{
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.say-text{
+     align-items: center;
+     text-align: center;
+     padding: 1rem 1.5rem;
+     color: crimson;
+     font-weight: 600;  
+     text-shadow: rgb(0, 0, 0) 1px 0 10px; 
+}
+.say-text:hover{
+  transform: scale(1.2);
+  
+}
+.form-control{
+  border: 2px solid rgb(158, 14, 14);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  margin-bottom: 18px;
+  font-weight: 500;
+font-style: oblique;} 
+
+
+.form-control:hover{
+  transform: scale(1.1);
+
+}
+
+form .submit{
+  padding: 15px 0px;
+  text-align: center;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #960032;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  font-style: oblique;
+  text-shadow: 2px 2px #000000;
+}
+
+
+form .submit:hover{
+  background: #960032;
+}
+
+img{
+  border-radius: 2rem;
+  border: #960032 solid 1px;
+}
+
+
+.alert-contact{
+  border: 20px solid red;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: rgb(121, 121, 121);
+  color: #000000;
+}
